@@ -16,7 +16,7 @@ class Circulo {
         
         this.borderColor = "purple";
         this.borderWidth = 10;
-        this.x = 100;
+        this.x = params.x || 100;
         this.y = 100;
         this.radiusX=30;
         this.radiusY=30;
@@ -59,7 +59,7 @@ while (rightEdgeofLastCircle< CANVAS.width){
     });
     listaDeCirculos.push(nuevoCirculo);
 
-    rightEdgeofLastCircle = nuevoCirculo.x + nuevoCirculo.radiusX + distance.x;
+    rightEdgeofLastCircle = nuevoCirculo.x + nuevoCirculo.radiusX + nuevoCirculo.distanceX;
 
 }
 
